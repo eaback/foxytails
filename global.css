@@ -20,15 +20,22 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'DynaPuff', cursive;
 }
 
-/* att göra:
-länka till global.style i alla CSS-filer, dvs. :
+button {
+  padding: 10px;
+  border: none;
+  background-color: var(--secondary-color);
+  color: var(--contrast-color);
+  font-family: 'DynaPuff', cursive;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-@import url("global.css");
-
-överst i CSS-filerna
-+
-
-<link rel="stylesheet" href="global.css">
-
-i HTML-head
-*/
+.button2 {
+  padding: 10px;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--contrast-color);
+  font-family: 'DynaPuff', cursive;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
