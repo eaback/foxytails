@@ -48,12 +48,6 @@ header {
     width: auto;
 }
 
-.logo span {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--primary-color);
-}
-
 nav ul {
     display: flex;
     gap: 2.5rem;
@@ -206,11 +200,9 @@ footer hr {
 }
 
 /* Responsive Design */
+
 @media (max-width: 768px) {
-    .header-content {
-        flex-direction: column;
-        gap: 1rem;
-    }
+
 
     nav ul {
         flex-direction: column;
