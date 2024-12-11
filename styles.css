@@ -1,10 +1,3 @@
-:root {
-    --primary-color: #fd8408;
-    --secondary-color: #fcd5ae;
-    --text-color: #333;
-    --background-color: #fff;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -87,7 +80,6 @@ main {
     text-align: center;
     color: var(--primary-color);
     margin-bottom: 2rem;
-    font-size: 2rem;
 }
 
 .books-container {
