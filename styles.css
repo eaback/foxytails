@@ -72,6 +72,10 @@ nav a:hover {
     color: var(--primary-color);
 }
 
+.mobile-div {
+    display: none;
+}
+
 /* Main Content Styles */
 main {
     padding: 2rem;
@@ -234,6 +238,52 @@ footer hr {
 
     .footer-links {
         align-items: center;
+    }
+
+    .desktop-div {
+        display: none;
+    }
+
+    .mobile-div {
+        display: block;
+    }
+
+    #checkbtn {
+        font-size: 2.5rem;
+        color: var(--primary-color);
+        cursor: pointer;
+        background: none;
+        border: none;
+        position: absolute;
+        top: 1.2rem;
+        right: 1rem;
+    }
+
+    .nav-mobile {
+        display: none;
+        position: absolute;
+        top: 4.5rem;
+        right: 0;
+        background: var(--background-color);
+        z-index: 1;
+        width: 200px;
+    }
+    
+    .nav-mobile.active {
+        display: block;
+        border: 1px solid var(--primary-color);
+    }
+    
+    .nav-mobile a {
+        color: var(--text-color);
+        padding: 0.5rem 1.5rem;
+        display: block;
+    }
+
+    .nav-mobile a:active {
+        color: var(--primary-color);
+        padding: 0.5rem 1.5rem;
+        display: block;
     }
 }
 
