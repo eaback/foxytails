@@ -4,6 +4,13 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(response => response.text())
         .then(data => {
             document.getElementById('header-placeholder').innerHTML = data;
+
+            const checkbtn = document.getElementById('checkbtn');
+            const navMobile = document.querySelector('.nav-mobile');
+
+            checkbtn.addEventListener('click', function() {
+                navMobile.classList.toggle('active');
+            })
         });
 
     // Load footer
