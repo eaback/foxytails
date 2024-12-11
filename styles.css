@@ -33,7 +33,7 @@ header {
 .header-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -43,10 +43,9 @@ header {
     align-items: center;
     gap: 0.5rem;
 }
-
-.star-logo {
-    width: 50px;
-    height: 50px;
+.header-logo {
+    height: 100px;
+    width: auto;
 }
 
 .logo span {
@@ -57,7 +56,7 @@ header {
 
 nav ul {
     display: flex;
-    gap: 2rem;
+    gap: 2.5rem;
     list-style: none;
 }
 
