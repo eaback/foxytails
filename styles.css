@@ -1,9 +1,4 @@
-:root {
-    --primary-color: #fd8408;
-    --secondary-color: #fcd5ae;
-    --text-color: #333;
-    --background-color: #fff;
-}
+@import url("global.css");
 
 * {
     margin: 0;
@@ -84,7 +79,6 @@ main {
     text-align: center;
     color: var(--primary-color);
     margin-bottom: 2rem;
-    font-size: 2rem;
 }
 
 .books-container {
