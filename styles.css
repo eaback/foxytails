@@ -64,15 +64,30 @@ nav a:hover {
     display: none;
 }
 
+/* Temp: Add to global css */
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.fox-img {
+    width: 350px;
+    height: auto;
+}
+
 /* Main Content Styles */
+
 main {
-    padding: 2rem;
+    padding: 2rem 0;
 }
 
 .monthly-top {
     background-color: var(--secondary-color);
     padding: 2rem;
     margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-around;
 }
 
 .monthly-top h2 {
@@ -81,13 +96,34 @@ main {
     margin-bottom: 2rem;
 }
 
+.monthly-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.monthly-container a {
+    align-self: flex-end; 
+    display: flex;
+    gap: 1rem;
+ }
+
+ .monthly-container a:hover {
+    color: var(--primary-color);
+ }
+
+.hero-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .books-container {
     display: flex;
     justify-content: space-around;
     gap: 2rem;
     flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    margin-bottom: 2rem;
 }
 
 .book {
@@ -195,8 +231,20 @@ footer hr {
 
 /* Responsive Design */
 
+@media (max-width: 1250px) {
+    .hero-img {
+        display: none;
+    }
+}
+
+
 @media (max-width: 768px) {
 
+
+    .book img {
+        width: 250px;
+        height: 300px;
+    }
 
     nav ul {
         flex-direction: column;
@@ -204,7 +252,6 @@ footer hr {
     }
 
     .books-container {
-        flex-direction: column;
         align-items: center;
     }
 
