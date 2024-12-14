@@ -1,3 +1,7 @@
+:root {
+    --primary-color-muted: #fd8308d4;
+}
+
 .content-wrapper {
     display: flex;
     gap: 1.25rem;
@@ -50,10 +54,36 @@
     color: var(--contrast-color);
 }
 
+.filter-section {
+    margin-bottom: 1rem;
+}
+
+.dark-orange,
+.light-orange {
+    border-radius: 10px;
+    padding: 0rem 0.5rem;
+}
+
+.dark-orange {
+    background-color: var(--primary-color-muted);
+}
+
+.light-orange {
+    background-color: var(--secondary-color);
+}
+
+/* Ensures the grid stretches on bigger screens, missed this due to working on a smaller screen */
+
+.books-section {
+    flex: 4;
+    padding: 1rem;
+}
+
 .books-heading {
     display: flex;
     justify-content: center;
     color: var(--primary-color);
+    margin-bottom: 1.5rem;
 }
 
 .books-grid {
@@ -69,7 +99,6 @@
     background-color: var(--background-color);
 }
 
-.book:hover,
 .book-title:hover {
     color: var(--primary-color);
 }
@@ -115,4 +144,8 @@
 .cart-button:hover {
     transition: ease-in 0.2s;
     transform: scale(1.06);
+}
+
+#foxy-img {
+    width: 220px;
 }
