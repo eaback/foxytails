@@ -149,9 +149,7 @@ main {
     border-radius: 4px;
 }
 
-.blog-posts {
-    margin-top: 2rem;
-}
+/* Blog Section */
 
 .blog-grid {
     display: grid;
@@ -159,6 +157,12 @@ main {
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.blog-posts {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .blog-post {
@@ -171,19 +175,26 @@ main {
     gap: 1rem;
 }
 
+.blog-posts h2 {
+    color: var(--primary-color);
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.blog-posts p {
+    text-align: justify;
+}
+
+.blog-posts p a {
+    color: var(--primary-color);
+}
+
+.blog-posts p a:hover {
+    color: var(--contrast-color);
+}
+
 .blog-post h3 {
     color: var(--primary-color);
-}
-
-.read-more {
-    color: var(--primary-color);
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: auto;
-}
-
-.read-more:hover {
-    text-decoration: underline;
 }
 
 /* ----- Footer Styles ----- */
