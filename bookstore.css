@@ -1,5 +1,6 @@
 :root {
-    --primary-color-muted: #fd8308d4;
+    --primary-color-muted: #fd8308d4; 
+    /* Added for a less sharp orange in the filter section, same color just lower opacity */
 }
 
 .content-wrapper {
@@ -95,6 +96,7 @@
     background-color: var(--secondary-color);
     padding: 1.2rem;
     border-radius: 8px;
+    max-width: 1080px;
 }
 
 .book-grid .book {
@@ -157,6 +159,8 @@
 
     .books-grid {
         grid-template-columns: repeat(4, 1fr); /* Smaller desktop 4 columns */
+        max-width: 870px;
+        margin: 0 auto;
     }
 }
 
@@ -164,6 +168,8 @@
 
     .books-grid {
         grid-template-columns: repeat(3, 1fr); /* Smaller screen 3 columns */
+        max-width: 660px;
+        margin: 0 auto;
     }
 }
 
@@ -171,12 +177,14 @@
 
     .books-grid {
         grid-template-columns: repeat(2, 1fr); /* Smaller screens 2 columns */
+        max-width: 460px;
+        margin: 0 auto;
     }
 }
 
 @media (max-width: 768px) {
     .content-wrapper {
-        flex-direction: column;
+        flex-direction: column; 
     }
 
     .sidebar {
@@ -191,6 +199,8 @@
 
     .books-grid {
         grid-template-columns: 1fr; /* Single column for books on mobile */
+        max-width: 350px;
+        margin: 0 auto;
     }
 
     .book-info .cart-button {
