@@ -232,7 +232,7 @@ main {
 }
 
 .review-card {
-    max-width: 300px;
+    width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -303,6 +303,11 @@ footer hr {
     .blog-grid .blog-post:nth-child(3) {
         grid-column: span 2;
     }
+
+    .review-card {
+        padding: 1rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
 }
 
 
@@ -327,6 +332,15 @@ footer hr {
 
     .blog-grid .blog-post {
         grid-column: 1 / -1;
+    }
+
+    .review-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .review-card {
+        width: 100%;
     }
 
     .footer-content {
