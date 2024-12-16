@@ -197,6 +197,41 @@ main {
     color: var(--primary-color);
 }
 
+/* Reviews section */
+
+.reviews {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.review-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--primary-color);
+}
+
+.review-title img {
+    width: 45px;
+    height: auto;
+}
+
+.review-content {
+    background-color: var(--background-color);
+    border-radius: 8px;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
 /* ----- Footer Styles ----- */
 
 footer {
