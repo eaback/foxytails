@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foxy - view book</title>
+    <link rel="stylesheet" href="product_view.css">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="grid-container">
+        <header id="header-placeholder"></header>
+        <main id="main-content">
+            <!-- Page-specific content will go here -->
+            <section class="book-section">
+                <div class="book-content">
+                    <img src="/placeholder.svg?height=200&width=150" alt="Book cover"
+                        id="book-cover"><!--hämta image från API-->
+                    <div class="book-info-container">
+                        <div class="info-container">
+                            <h2 id="booktitle-placeholder">The Little Prince</h2> <!--hämta name från API-->
+                            <p id="category-placeholder">Category: Fiction, Adventure</p>
+                            <!-- hämta categories från API -->
+                            <p id="stock-placeholder">In stock</p> <!-- hämta stock från API ev. bara true/false -->
+                            <p id="price-placeholder">$12.99</p><!-- hämta price från API här -->
+                        </div>
+                        <div class="buy-container">
+                            <label>Quantity</label>
+                            <input type="number" id="quantity" max="50" min="1">
+                            <button type="button" class="button2">Add to cart <img src="img/cart-icon-contrast.png"
+                                    alt="Add to cart"></button>
+                        </div>
+                        <div>
+                            <p id="description-placeholder">Description: <br>A young prince explores various planets,
+                                meeting interesting characters.</p><!-- hämta description från API här -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </main>
+    <footer id="footer-placeholder"></footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
