@@ -54,3 +54,8 @@ input {
 button {
     width: 15rem;
 }
+
+button img {
+    width: 24px;
+    height: 24px;
+}
