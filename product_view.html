@@ -14,36 +14,34 @@
         <header id="header-placeholder"></header>
         <main id="main-content">
             <!-- Page-specific content will go here -->
-            <div class="book-container">
-                <img src="/placeholder.svg?height=200&width=150" alt="Book cover" id="book-cover"><!--hämta image från API-->
-                <div class="book-info-container">
-                    <div class="info-container">
-                        <h2 id="booktitle-placeholder">Mamma Mu blir ledsen</h2> <!--hämta name från API-->
-                            <p id="category-placeholder">Category:</p> <!-- hämta categories från API -->
+            <section class="book-section">
+                <div class="book-content">
+                    <img src="/placeholder.svg?height=200&width=150" alt="Book cover"
+                        id="book-cover"><!--hämta image från API-->
+                    <div class="book-info-container">
+                        <div class="info-container">
+                            <h2 id="booktitle-placeholder">The Little Prince</h2> <!--hämta name från API-->
+                            <p id="category-placeholder">Category: Fiction, Adventure</p>
+                            <!-- hämta categories från API -->
                             <p id="stock-placeholder">In stock</p> <!-- hämta stock från API ev. bara true/false -->
-                            <p id="price-placeholder">149kr</p><!-- hämta price från API här -->
+                            <p id="price-placeholder">$12.99</p><!-- hämta price från API här -->
+                        </div>
+                        <div class="buy-container">
+                            <label>Quantity</label>
+                            <input type="number" id="quantity" max="50" min="1">
+                            <button type="button" class="button2">Add to cart <img src="img/cart-icon-contrast.png"
+                                    alt="Add to cart"></button>
+                        </div>
+                        <div>
+                            <p id="description-placeholder">Description: <br>A young prince explores various planets,
+                                meeting interesting characters.</p><!-- hämta description från API här -->
+                        </div>
                     </div>
-                    <div class="buy-container">
-                        <label>Quantity</label>
-                        <input type="number" id="quantity">
-                        <button type="button" class="button2">Add to cart <img src="img/cart-icon-contrast.png" alt="Add to cart"></button>
                     </div>
-                    <div>
-                        <p id="description-placeholder">Mamma Mu och Kråkan står och tittar ut på lagårdsbacken när
-                            Lina kommer ut med pannkakor. Kråkan blir alldeles till sig:
-                            "Pannkaka! Till mig, bara till mig. Pann och kaka till Krå och kan!"
-                            Efter det bryr sig Kråkan bara om Lina. Det är som om Mamma Mu inte finns. Kråkan kallar
-                            Lina "sin enda vän." Då blir Mamma Mu ledsen.
-                            Mamma Mu och Kråkan är två av våra mest älskade barnbokskaraktärer. I Mamma blir ledsen
-                            tycker Kråkan att det är orättvist att Mamma Mu aldrig kommer och hälsar på honom i
-                            kråkboet. Det är alltid han som kommer till henne! Kanske har Kråkan rätt?
-
-                            En varm berättelse om vänskap och försoning.</p><!-- hämta description från API här -->
-                    </div>
-                </div>
-            </div>
-        </main>
-        <footer id="footer-placeholder"></footer>
+            </section>
+    </div>
+    </main>
+    <footer id="footer-placeholder"></footer>
     </div>
     <script src="script.js"></script>
 </body>
