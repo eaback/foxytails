@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="global.css">
     <link rel="stylesheet" href="about.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 </head>
 <body>
     <div class="grid-container">
@@ -44,9 +45,15 @@
             <section class="articles-section">
                 <h2>Insights on Children's Reading</h2>
                 <div class="article-content">
+                    <canvas id="myChart"></canvas>
                     <article>
                         <h3>The Importance of Reading for Pleasure</h3>
-                        <p>A recent article in The Guardian highlights the decline in children reading for pleasure. This trend underscores the importance of our mission at Foxy Tails. We believe that by making reading fun and engaging, we can help reverse this trend and foster a lifelong love of books in children.</p>
+                        <!-- <p>A recent article in The Guardian highlights the decline in children reading for pleasure. This trend underscores the importance of our mission at Foxy Tails. We believe that by making reading fun and engaging, we can help reverse this trend and foster a lifelong love of books in children.</p> -->
+                       <p>Sure, books make great pillow forts, treasure maps, and even impressive book towers (we’ve all been there!). But what if we could use those same books to build bigger brains too?
+
+                        <br><br>A recent article in The Guardian highlights the decline in children reading for pleasure. At Foxy Tails, 
+                        we believe books can be both fun and brain-boosting. By turning playtime into story time, we can help kids discover 
+                        that reading isn’t just for “grown-ups” – it’s an adventure waiting to happen!</p>
                         <a href="https://www.theguardian.com/books/2024/nov/05/report-fall-in-children-reading-for-pleasure-national-literacy-trust" target="_blank" rel="noopener noreferrer">Read more</a>
                     </article>
                 </div>
@@ -55,5 +62,6 @@
         <footer id="footer-placeholder"></footer>
     </div>
     <script src="script.js"></script>
+    <script src="bar_chart.js"></script>
 </body>
 </html>

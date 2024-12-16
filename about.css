@@ -102,7 +102,25 @@
     color: var(--contrast-color);
 }
 
+.article-content {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+
+#myChart {
+    width: 100%;
+    max-width: 450px;
+}
+
 /* Responsive design */
+
+@media (max-width: 1050px) {
+    .article-content {
+        flex-direction: column;
+    }
+}
+
 @media (max-width: 768px) {
     .about-section,
     .why-how-section,
