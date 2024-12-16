@@ -15,18 +15,18 @@
         <main id="main-content">
             <!-- Page-specific content will go here -->
             <div class="book-container">
-                <img src="/placeholder.svg?height=200&width=150" alt="Book cover">
+                <img src="/placeholder.svg?height=200&width=150" alt="Book cover" id="book-cover"><!--hämta image från API-->
                 <div class="book-info-container">
                     <div class="info-container">
-                        <h2 id="booktitle-placeholder">Mamma Mu blir ledsen</h2> <!--hämta title från API-->
-                            <p id="author-placeholder">Author: Jujja Wieslander</p> <!-- hämta author från API -->
-                            <p id="category-placeholder">Category:</p> <!-- hämta category från API -->
+                        <h2 id="booktitle-placeholder">Mamma Mu blir ledsen</h2> <!--hämta name från API-->
+                            <p id="category-placeholder">Category:</p> <!-- hämta categories från API -->
+                            <p id="stock-placeholder">In stock</p> <!-- hämta stock från API ev. bara true/false -->
                             <p id="price-placeholder">149kr</p><!-- hämta price från API här -->
                     </div>
                     <div class="buy-container">
                         <label>Quantity</label>
                         <input type="number" id="quantity">
-                        <button type="button" class="button2">Add to cart <img src="img/cart-icon" alt="Add to cart"></button>
+                        <button type="button" class="button2">Add to cart <img src="img/cart-icon-contrast.png" alt="Add to cart"></button>
                     </div>
                     <div>
                         <p id="description-placeholder">Mamma Mu och Kråkan står och tittar ut på lagårdsbacken när
@@ -38,7 +38,7 @@
                             tycker Kråkan att det är orättvist att Mamma Mu aldrig kommer och hälsar på honom i
                             kråkboet. Det är alltid han som kommer till henne! Kanske har Kråkan rätt?
 
-                            En varm berättelse om vänskap och försoning.</p>
+                            En varm berättelse om vänskap och försoning.</p><!-- hämta description från API här -->
                     </div>
                 </div>
             </div>
