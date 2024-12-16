@@ -7,7 +7,8 @@
 }
 
 body {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    /* font-family: 'Comic Sans MS', cursive, sans-serif; */
+    font-family: 'Gowun Dodum', sans-serif;
     color: var(--text-color);
     line-height: 1.6;
 }
@@ -85,7 +86,7 @@ main {
 .monthly-top {
     margin: 0 auto 2rem;
     max-width: 1200px;
-    border-radius: 1rem;
+    border-radius: 8px;
     background-color: var(--secondary-color);
     padding: 2rem 0;
     display: flex;
@@ -107,6 +108,7 @@ main {
     align-self: flex-end; 
     display: flex;
     gap: 1rem;
+    font-weight: 600;
  }
 
  .monthly-container a:hover {
@@ -236,6 +238,8 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: justify;
+    font-style: italic;
 }
 
 .review-card img {
