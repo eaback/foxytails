@@ -13,7 +13,7 @@
     margin-bottom: 5rem;
     display: flex;
     justify-content: center;
-    gap: 5rem;
+    gap: 3rem;
 }
 
 h2 {
@@ -23,15 +23,16 @@ h2 {
 
 #book-cover {
     background: var(--background-color);
-    width: 200px;
-    height: 270px;
+    width: 20rem;
+    height: 28rem;
     border-radius: 8px;
     padding: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .book-info-container {
-    width: 500px;
+    margin-top: -1rem;
+    width: 30rem;
 }
 
 #price-placeholder {
@@ -60,4 +61,44 @@ button img {
     padding: 0rem;
     width: 20px;
     height: 20px;
+}
+
+@media (max-width: 1000px) {
+
+    #book-cover {
+        width: 15rem;
+        height: 22rem;
+    }
+    
+    .book-info-container {
+        margin-top: -1rem;
+        width: 20rem;
+    }
+
+    button {
+        width: 12rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .book-container {
+        padding: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .book-info-container {
+        width: 25rem;
+        align-self: center;
+        
+    }
+
+    #book-cover {
+        width: 15rem;
+        height: 20rem;
+        align-self: center;
+    }
 }
