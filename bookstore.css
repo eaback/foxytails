@@ -193,6 +193,10 @@
         margin: 0 auto;
     }
 
+    .book a img {
+        margin-top: 1rem;
+    }
+
     .book-info .cart-button {
         margin-left: 10rem; 
         display: flex;
@@ -201,5 +205,11 @@
 
     #foxy-img {
         display: none;
+    }
+}
+
+@media (max-width: 420px) {
+    .book a img {
+        margin-top: 0.4rem;
     }
 }
