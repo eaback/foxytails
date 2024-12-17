@@ -32,6 +32,17 @@
     width: 34px;
 }
 
+#search-button:hover {
+    transition: ease-in 0.1s;
+    transform: scale(1.1);
+    background-color: var(--primary-color-muted);
+}
+
+#search-button img:hover {
+    content: url(/img/search-icon-contrast.png);
+    width: 34px;
+}
+
 .search-container {
     display: flex;
     align-items: center;
@@ -135,8 +146,15 @@
 }
 
 .cart-button:hover {
-    transition: ease-in 0.2s;
-    transform: scale(1.06);
+    transition: ease-in 0.1s;
+    transform: scale(1.1);
+    background-color: var(--primary-color-muted);
+}
+
+.cart-button img:hover {
+    width: 24px;
+    height: 24px;
+    content: url(/img/cart-icon-contrast.png);
 }
 
 #foxy-img {
