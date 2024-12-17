@@ -6,7 +6,6 @@ h1 {
     color: var(--primary-color);
 }
 
-
 #contact-section {
     max-width: 1200px;
     margin: 0 auto 2rem;
@@ -55,6 +54,42 @@ h1 {
    padding: 1rem;
 }
 
+#contact-form-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    text-align: left;
+}
+
+#customer-contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    padding: 0.4rem;
+    border-radius: 8px;
+    border:1px solid gray ;
+}
+
+textarea {
+    height: 200px;
+    width: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
+#submit-button {
+    display: none;
+}
+
+#contact-form button {
+    width: 100%;
+    margin-top: 1rem;
+}
+
 @media (max-width: 768px) {
     #grid-container-contact {
         grid-template-columns: 1fr;
@@ -65,5 +100,17 @@ h1 {
     }
     #map {
         display: none;
+    }
+    #contact-form-content {
+        display: grid;
+       grid-template-columns: 1fr;
+    }
+    #submit-button-form {
+        display: none;
+    }
+
+    #submit-button {
+        display: block;
+        margin: auto;
     }
 }
