@@ -75,10 +75,7 @@
     background-color: var(--secondary-color);
 }
 
-/* Ensures the grid stretches on bigger screens, missed this due to working on a smaller screen */
-
 .books-section {
-    flex: 4;
     padding: 1rem;
 }
 
@@ -99,19 +96,12 @@
     max-width: 1080px;
 }
 
-.book-grid .book {
+.books-grid .book {
     background-color: var(--background-color);
 }
 
 .book-title:hover {
     color: var(--primary-color);
-}
-
-.book-grid .book img {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-    margin-bottom: 0.7rem;
 }
 
 .book-title {
@@ -210,7 +200,6 @@
     }
 
     #foxy-img {
-        width: 220px;
         display: none;
     }
 }
