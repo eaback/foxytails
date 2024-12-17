@@ -8,7 +8,7 @@ h1 {
 
 #contact-section {
     max-width: 1200px;
-    margin: 0 auto 2rem;
+    margin: 2rem auto;
     padding: 2rem;
     background-color: var(--secondary-color);
     border-radius: 8px;
@@ -19,32 +19,32 @@ h1 {
 #contact-section p {
     max-width: 750px;
     margin: auto;
-    margin-bottom: 20px;
+    padding-bottom: 2rem;
 }
 
-#grid-container-contact{
+#grid-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 #contact-content {
-   background-color: var(--background-color);
-   border-radius: 8px;
-   padding: 1rem;
-   text-align: left;
-   display: grid;
-   grid-template-columns: 1fr 1fr;
+    background-color: var(--background-color);
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 #contact-info {
-    margin: auto;
+    margin-right: 1rem;
 }
 
 #map {
-    height: 150px;
+    width: 100%;
     border-radius: 8px;
-    margin: 10px;
+    margin: auto;
 }
 
 
@@ -69,16 +69,12 @@ h1 {
 input, textarea {
     padding: 0.4rem;
     border-radius: 8px;
-    border:1px solid gray ;
+    border: 1px solid gray ;
 }
 
 textarea {
     height: 200px;
     width: 100%;
-}
-
-button {
-    cursor: pointer;
 }
 
 #submit-button {
@@ -88,10 +84,11 @@ button {
 #contact-form button {
     width: 100%;
     margin-top: 1rem;
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
-    #grid-container-contact {
+    #grid-container {
         grid-template-columns: 1fr;
     }
     #contact-content {
@@ -102,8 +99,7 @@ button {
         display: none;
     }
     #contact-form-content {
-        display: grid;
-       grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     }
     #submit-button-form {
         display: none;
