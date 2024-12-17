@@ -27,11 +27,16 @@
     flex: 1;
 }
 
+.about-text p {
+    margin: 0 0 1rem;
+}
+
 .about-text h1,
 .why-how-section h2,
 .articles-section h2 {
     color: var(--primary-color);
     margin-bottom: 1rem;
+    font-size: 2rem;
 }
 
 .about-text p,
@@ -83,6 +88,7 @@
 
 .articles-section h3 {
     color: var(--contrast-color);
+    margin-bottom: 8px;
 }
 
 .articles-section a {
@@ -96,7 +102,25 @@
     color: var(--contrast-color);
 }
 
+.article-content {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+
+#myChart {
+    width: 100%;
+    max-width: 450px;
+}
+
 /* Responsive design */
+
+@media (max-width: 1050px) {
+    .article-content {
+        flex-direction: column;
+    }
+}
+
 @media (max-width: 768px) {
     .about-section,
     .why-how-section,
