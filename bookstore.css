@@ -6,9 +6,10 @@
 .content-wrapper {
     display: flex;
     gap: 1.25rem;
-    padding: 1.25rem;
+    padding: 0 1.25rem;
     max-width: 1500px;
     margin: 0 auto;
+    justify-content: center;
 }
 
 .sidebar {
@@ -29,6 +30,17 @@
 }
 
 #search-button img {
+    width: 34px;
+}
+
+#search-button:hover {
+    transition: ease-in 0.1s;
+    transform: scale(1.1);
+    background-color: var(--primary-color-muted);
+}
+
+#search-button img:hover {
+    content: url(/img/search-icon-contrast.png);
     width: 34px;
 }
 
@@ -75,10 +87,7 @@
     background-color: var(--secondary-color);
 }
 
-/* Ensures the grid stretches on bigger screens, missed this due to working on a smaller screen */
-
 .books-section {
-    flex: 4;
     padding: 1rem;
 }
 
@@ -99,19 +108,12 @@
     max-width: 1080px;
 }
 
-.book-grid .book {
+.books-grid .book {
     background-color: var(--background-color);
 }
 
 .book-title:hover {
     color: var(--primary-color);
-}
-
-.book-grid .book img {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-    margin-bottom: 0.7rem;
 }
 
 .book-title {
@@ -145,8 +147,15 @@
 }
 
 .cart-button:hover {
-    transition: ease-in 0.2s;
-    transform: scale(1.06);
+    transition: ease-in 0.1s;
+    transform: scale(1.1);
+    background-color: var(--primary-color-muted);
+}
+
+.cart-button img:hover {
+    width: 24px;
+    height: 24px;
+    content: url(/img/cart-icon-contrast.png);
 }
 
 #foxy-img {
@@ -203,6 +212,10 @@
         margin: 0 auto;
     }
 
+    .book a img {
+        margin-top: 1rem;
+    }
+
     .book-info .cart-button {
         margin-left: 10rem; 
         display: flex;
@@ -210,7 +223,12 @@
     }
 
     #foxy-img {
-        width: 220px;
         display: none;
+    }
+}
+
+@media (max-width: 420px) {
+    .book a img {
+        margin-top: 0.4rem;
     }
 }
