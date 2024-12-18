@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function handleSearch() {
-        const searchTerm = searchInput.value.toLowerCase();
+        const searchTerm = searchInput.value;
         const books = document.querySelectorAll('.book');
 
         books.forEach(book => {
