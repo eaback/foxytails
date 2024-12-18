@@ -31,7 +31,7 @@ function getBookContent(data) {
             <a href="/product_view.html" class="book-link">
             <div class="book">
                 <img src="${book.coverImage || 'img/book-cover-placeholder.png'}" alt="Book Cover">
-                <h3>${book.name || 'Unknown Title'}</h3>
+                <h4>${book.name || 'Unknown Title'}</h4>
             </div>
             </a>`;
         });
