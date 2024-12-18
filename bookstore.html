@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foxsy - Böcker för Barn och Farföräldrar</title>
+    <title>Foxsy - Books for Kids and Grandparents</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="global.css">
     <link rel="stylesheet" href="bookstore.css">
@@ -28,18 +28,10 @@
                         <img src="/img/tablet.png" alt="Foxy" id="foxy-img">
                     </div>
                     <!-- Category filter -->
-                    <div class="filter-section">
+                    <div class="filter-section" id="category-filters">
                         <h3>Filter by Category</h3>
-                        <label class="dark-orange"><input type="checkbox" value="fiction" id="fiction"> Fiction</label>
-                        <label class="light-orange"><input type="checkbox" value="adventure" id="adventure"> Adventure</label>
-                        <label class="dark-orange"><input type="checkbox" value="fantasy" id="fantasy"> Fantasy</label>
-                        <label class="light-orange"><input type="checkbox" value="humor" id="humor"> Humor</label>
-                        <label class="dark-orange"><input type="checkbox" value="classic" id="classic"> Classic</label>
-                        <label class="light-orange"><input type="checkbox" value="bedtime" id="bedtime"> Bedtime</label>
-                        <label class="dark-orange"><input type="checkbox" value="friendship" id="friendship"> Friendship</label>
-                        <label class="light-orange"><input type="checkbox" value="educational" id="educational"> Educational</label>
-                        <label class="dark-orange"><input type="checkbox" value="mystery" id="mystery"> Mystery</label>
-                        <label class="light-orange"><input type="checkbox" value="fairy-tale" id="fairy-tale"> Fairy Tale</label>
+                        <!-- Category checkboxes will be dynamically inserted here -->
+
                     </div>
                     <!-- Price filter -->
                     <div class="filter-section">
@@ -49,132 +41,12 @@
                     </div>
                  </aside>
                  <!-- Bookstore section -->
-                <section class="books-section">
+                 <section class="books-section">
                     <div class="books-heading">
                         <h2>All Books</h2>
                     </div>
-                    <div class="books-grid">
-                        <!-- Placeholder books to ensure grid looks correct -->
-                        <div class="book">
-                            <a href="/product_view.html">
-                                <img src="https://covers.openlibrary.org/b/isbn/9780385533225-M.jpg" alt="Book 1">
-                                <h3 class="book-title">Book 1</h3>
-                            </a>
-                            <div class="book-info">
-                                <span class="price">$6.50</span>
-                                <button type="button" class="cart-button button2">
-                                    <img src="/img/cart-icon.png" alt="Add to cart">
-                                </button>
-                            </div>
-                        </div>
-                        <div class="book">
-                            <a href="/product_view.html">
-                            <img src="https://covers.openlibrary.org/b/isbn/9780385533225-M.jpg" alt="Book 2">
-                            <h3 class="book-title">Book 2</h3>
-                            </a>
-                            <div class="book-info">
-                                <span class="price">$6.50</span>
-                                <button type="button" class="cart-button button2">
-                                    <img src="/img/cart-icon.png" alt="Add to cart">
-                                </button>
-                            </div>
-                        </div>
-                        <div class="book">
-                            <a href="/product_view.html">
-                                <img src="https://covers.openlibrary.org/b/isbn/9780385533225-M.jpg" alt="Book 3">
-                                <h3 class="book-title">Book 3</h3>
-                            </a>
-                            <div class="book-info">
-                                <span class="price">$6.50</span>
-                                <button type="button" class="cart-button button2">
-                                    <img src="/img/cart-icon.png" alt="Add to cart">
-                                </button>
-                            </div>
-                        </div>
-                        <div class="book">
-                            <a href="/products_view.html">
-                                <img src="https://covers.openlibrary.org/b/isbn/9780385533225-M.jpg" alt="Book 4">
-                                <h3 class="book-title">Book 4</h3>
-                            </a>
-                            <div class="book-info">
-                                <span class="price">$6.50</span>
-                                <button type="button" class="cart-button button2">
-                                    <img src="/img/cart-icon.png" alt="Add to cart">
-                                </button>
-                            </div>
-                        </div>
-                        <div class="book">
-                            <a href="/product_view.html">
-                                <img src="https://covers.openlibrary.org/b/isbn/9780385533225-M.jpg" alt="Book 5">
-                                <h3 class="book-title">Book 5</h3>
-                            </a>
-                            <div class="book-info">
-                                <span class="price">$6.50</span>
-                                <button type="button" class="cart-button button2">
-                                    <img src="/img/cart-icon.png" alt="Add to cart">
-                                </button>
-                            </div>
-                        </div>
-                        <div class="book">
-                            <a href="/product_view.html">
-                                <img src="https://covers.openlibrary.org/b/isbn/9780385533225-M.jpg" alt="Book 6">
-                                <h3 class="book-title">Book 6</h3>
-                            </a>
-                            <div class="book-info">
-                                <span class="price">$6.50</span>
-                                <button type="button" class="cart-button button2">
-                                    <img src="/img/cart-icon.png" alt="Add to cart">
-                                </button>
-                            </div>
-                        </div>
-                        <div class="book">
-                            <a href="/product_view.html">
-                                <img src="https://covers.openlibrary.org/b/isbn/9780385533225-M.jpg" alt="Book 7">
-                                <h3 class="book-title">Book 7</h3>
-                            </a>
-                            <div class="book-info">
-                                <span class="price">$6.50</span>
-                                <button type="button" class="cart-button button2">
-                                    <img src="/img/cart-icon.png" alt="Add to cart">
-                                </button>
-                            </div>
-                        </div>
-                        <div class="book">
-                            <a href="/product_view.html">
-                                <img src="https://covers.openlibrary.org/b/isbn/9780385533225-M.jpg" alt="Book 8">
-                                <h3 class="book-title">Book 8</h3>
-                            </a>
-                            <div class="book-info">
-                                <span class="price">$6.50</span>
-                                <button type="button" class="cart-button button2">
-                                    <img src="/img/cart-icon.png" alt="Add to cart">
-                                </button>
-                            </div>
-                        </div>
-                        <div class="book">
-                            <a href="/product_view.html">
-                                <img src="https://covers.openlibrary.org/b/isbn/9780385533225-M.jpg" alt="Book 9">
-                                <h3 class="book-title">Book 9</h3>
-                            </a>
-                            <div class="book-info">
-                                <span class="price">$6.50</span>
-                                <button type="button" class="cart-button button2">
-                                    <img src="/img/cart-icon.png" alt="Add to cart">
-                                </button>
-                            </div>
-                        </div>
-                        <div class="book">
-                            <a href="/product_view.html">
-                                <img src="https://covers.openlibrary.org/b/isbn/9780385533225-M.jpg" alt="Book 10">
-                                <h3 class="book-title">Book 10</h3>
-                            </a>
-                            <div class="book-info">
-                                <span class="price">$6.50</span>
-                                <button type="button" class="cart-button button2">
-                                    <img src="/img/cart-icon.png" alt="Add to cart">
-                                </button>
-                            </div>
-                        </div>
+                    <div id="books-grid" class="books-grid">
+                        <!-- Books will be dynamically inserted here -->
                     </div>
                 </section>
             </div>

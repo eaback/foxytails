@@ -67,10 +67,19 @@
     display: block;
     margin: 0.3rem 0;
     color: var(--contrast-color);
+    cursor: pointer;
 }
 
 .filter-section {
     margin-bottom: 1rem;
+}
+
+.filter-section label:hover {
+    opacity: 0.8;
+}
+
+.filter-section .category-checkbox {
+    margin-right: 0.5rem;
 }
 
 .dark-orange,
@@ -89,6 +98,7 @@
 
 .books-section {
     padding: 1rem;
+    flex: 3;
 }
 
 .books-heading {
@@ -108,6 +118,38 @@
     max-width: 1080px;
 }
 
+/* added for the search and API connection */
+.books-grid p {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    color: #666;
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.book:hover {
+    transform: translateY(-5px);
+}
+
+.book a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.book img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
 .books-grid .book {
     background-color: var(--background-color);
 }
@@ -117,16 +159,22 @@
 }
 
 .book-title {
+    font-size: 1rem;
     margin: 0.7rem 0;
+    padding: 0 0.5rem;
+    color: var(--text-color);
 }
 
 .book-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0.5rem;
 }
 
 .price {
+    font-weight: bold;
+    color: var(--primary-color);
     margin-right: auto;
 }
 
@@ -160,6 +208,7 @@
 
 #foxy-img {
     width: 220px;
+    margin-top: 1rem;
 }
 
 /* Responsive styles */
