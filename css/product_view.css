@@ -105,6 +105,12 @@ button {
     width: auto;
 }
 
+@media (max-width: 1470px) {
+    #main-content {
+        background-image: none;
+    }
+}
+
 @media (max-width: 1000px) {
 
     #book-cover {
