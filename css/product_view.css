@@ -55,14 +55,36 @@ input {
   }
 
 button {
-    width: 15rem;
+    width: 12rem;
 }
 
-button img {
-    margin-left: 1rem;
+#cart-button img {
+    margin: 0;
+    padding: 0.3rem;
+    width: 40px;
+    height: 40px;
+}
+
+#cart-button {
     padding: 0rem;
-    width: 20px;
-    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding-left: 2rem;
+    padding-right: 1rem;
+}
+
+.buy-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 67%;
+    margin-bottom: 0.6rem;
+}
+
+#quantity {
+    width: auto;
 }
 
 @media (max-width: 1000px) {
@@ -81,12 +103,17 @@ button img {
         width: 12rem;
     }
 
+    .buy-container {
+        max-width: 100%;
+    }
+
 }
 
 @media (max-width: 768px) {
 
     .book-section {
         padding: 1rem;
+        text-align: center;
     }
 
     .book-content {
@@ -106,6 +133,12 @@ button img {
         width: 15rem;
         height: 20rem;
         align-self: center;
+    }
+
+    .buy-container {
+        align-items: center;
+        justify-content: center;
+        gap: 0.7rem;
     }
 
     /* Some kind of general button styling was overriding the main styling for the hamburger menu button */
