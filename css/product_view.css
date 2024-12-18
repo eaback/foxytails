@@ -107,4 +107,9 @@ button img {
         height: 20rem;
         align-self: center;
     }
+
+    /* Some kind of general button styling was overriding the main styling for the hamburger menu button */
+    #checkbtn {
+        width: auto;
+    }
 }
