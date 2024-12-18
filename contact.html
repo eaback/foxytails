@@ -6,12 +6,51 @@
     <title>Contact Foxy Tails - Children's Online Bookshop</title>
     <link rel="icon" type="image/x-icon" href="/img/favicon.png">
     <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="contact.css">
 </head>
 <body>
     <div class="grid-container">
         <header id="header-placeholder"></header>
         <main id="main-content">
-            <!-- Page-specific content will go here -->
+            <h1 id="lable">Contact Us</h1>
+            <section id="contact-section">
+                <p>We’d love to hear from you! Whether you have a question about our 
+                    products, need assistance, or just want to share your feedback, 
+                    feel free to reach out to us. Here’s how you can get in touch:
+                </p>
+                <section id="grid-container">
+                    <div id="contact-content">
+                        <div id="contact-info">
+                        <h1>Contact Details</h1>
+                        <p>Email: info@foxsy.com<br>Tel: 123-456-789</p>
+                        <h1>Where to find us</h1>
+                        <p>123 Book Street<br>Reading Town<br>12345</p>
+                        </div>
+                        <div id="map">
+                            <img id="map" src="img/map.jpg">
+                        </div>
+                    </div>
+                    <div id="contact-form">
+                        <h1>Send Us A Message</h1>
+                        <div id="contact-form-content">
+                        <form id="customer-contact-info">
+                            <label for="fnmae">First Name:</label>
+                            <input type="text" id="fname" name="fname" placeholder="Foxy" maxlength="40">
+                            <label for="lnmae">Last Name:</label>
+                            <input type="text" id="lname" name="lname" placeholder="Tails" maxlength="50">
+                            <label for="email">E-Mail:</label>
+                            <input type="text" id="email" name="email" placeholder="Foxy@foxytails.fox" maxlength="100" required>
+                            <button type="submit" id="submit-button-form">Submit</button>
+                        </form>
+                        <form>
+                            <label type="textfield">Your Message:</label>
+                            <textarea id="textarea" placeholder="write your message here" maxlength="500"></textarea>
+                        </form>
+                    </div>
+                    <button type="submit" id="submit-button">Submit</button>
+                    </div>
+               </section>
+            </section>
             
         </main>
         <footer id="footer-placeholder"></footer>
