@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const bookDiv = document.createElement('div');
             bookDiv.className = 'book';
             bookDiv.innerHTML = `
-                <a href="/product_view.html?id=${book._id}">
+                <a href="/product_view.html?id=${book._id}" class="book-link">
                     <img src="${book.image}" alt="${book.name}">
                     <h3 class="book-title">${book.name}</h3>
                 </a>
