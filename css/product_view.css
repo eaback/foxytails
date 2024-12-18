@@ -3,6 +3,7 @@
 .book-section {
     max-width: 1200px;
     margin: 0 auto 2rem;
+    margin-top: 2rem;
     padding: 2rem;
     background-color: var(--secondary-color);
     border-radius: 8px;
