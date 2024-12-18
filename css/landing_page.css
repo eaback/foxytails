@@ -46,19 +46,22 @@ main {
     align-items: center;
 }
 
-.books-container {
+#books-container {
     display: flex;
     justify-content: space-around;
     gap: 2rem;
+    padding: 1rem;
     flex-wrap: wrap;
     margin-bottom: 2rem;
 }
 
 .book {
+    height: 300px;
+    width: 190px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    text-align: center;
     background: var(--background-color);
     padding: 1rem;
     border-radius: 8px;
@@ -194,11 +197,12 @@ main {
 }
 
 @media (max-width: 768px) {
-    .book img {
-        width: 250px;
-        height: 300px;
+ 
+    nav ul {
+        flex-direction: column;
+        align-items: center;
     }
-    
+
     .monthly-container a {
         align-self: center;
     }
