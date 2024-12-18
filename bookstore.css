@@ -118,6 +118,7 @@
     max-width: 1080px;
 }
 
+/* added for the search and API connection */
 .books-grid p {
     grid-column: 1 / -1;
     text-align: center;
@@ -129,7 +130,6 @@
 .book {
     display: flex;
     flex-direction: column;
-    background-color: var(--background-color);
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s ease;
