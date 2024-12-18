@@ -75,6 +75,17 @@ button {
     padding-right: 1rem;
 }
 
+#cart-button:hover {
+    transition: ease-in 0.1s;
+    transform: scale(1.03);
+    background-color: #fd8308d4;
+    cursor: pointer;
+}
+
+#cart-button img:hover {
+    content: url(/img/cart-icon.png);
+}
+
 .buy-container {
     display: flex;
     justify-content: space-between;
