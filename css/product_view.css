@@ -1,5 +1,12 @@
 @import url("global.css");
 
+#main-content {
+    background-image: url(/img/fox-peek.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 150px;
+}
+
 .book-section {
     max-width: 1200px;
     margin: 0 auto 2rem;
@@ -132,6 +139,10 @@ button {
         display: flex;
         flex-direction: column;
         gap: 1rem;
+        background-image: url(/img/fox-peek.png);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 100px;
     }
 
     .book-info-container {
