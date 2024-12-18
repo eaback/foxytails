@@ -93,6 +93,14 @@ document.addEventListener('DOMContentLoaded', function() {
                     </button>
                 </div>
             `;
+
+            bookDiv.querySelector(".book-link").addEventListener("click", function(){
+                const bookId = book._id;
+                searchByBookId(bookId);
+                window.location.href = `/product_view.html?id=${book._id}`
+            })
+
+
             return bookDiv;
         }
     
